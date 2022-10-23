@@ -17,6 +17,7 @@ header {
 .container {
     max-width: 1200px;
     margin: auto;
+    padding: 0 5px;
 }
 
 .header_wrapper {
@@ -52,7 +53,17 @@ header {
 .banner {
     background: url(/img/banner.jpg) top center no-repeat; 
     background-size: cover;
-    opacity: 0.3;
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(225, 228, 235, 0.788);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .banner_wrapper {
@@ -62,6 +73,7 @@ header {
     align-items: center;
     flex-direction: column;
     padding-top: 190px;
+    position: relative;
 }
 
 .banner_img1 {
@@ -91,4 +103,3 @@ header {
     Width: 64px;
     Height: 64px;
 }
-
